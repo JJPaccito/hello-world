@@ -1,0 +1,12 @@
+        .people-table { 
+            border: 2px solid; 
+            background: lightgrey; 
+            border-spacing: 0;">
+        }
+        .table-header {
+            background: yellow;        
+        }
+            
+        .table-body {
+            background: lightgrey;        
+        }
