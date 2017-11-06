@@ -11,12 +11,32 @@
 <script type="text/javascript">
     var languages = ["en", "lt", "de", "ru", "ee", "lv", "pl", "es", "it", "fr"]
     var currentLanguagesIndex = getLanguage();
-    function getLanguage();
+    function getLanguage()
     {
         var date = new Date();
-        console.log(date);
-        return 3;
+            date = date.getSeconds() % 10;
+            date = languages[date];
+        return date;
     }
+    function greetUser () {
+        if (currentLanguagesIndex === "en")
+        {
+        console.log("Hello world!");       
+        }
+        else if (currentLanguagesIndex === "lt")
+        {
+            console.log("Labas pasauli!")
+        }
+        else if (currentLanguagesIndex === "de")
+        {
+            console.log("Hallo welt!")
+        }
+        else 
+        {
+            console.log(".....")
+        }
+    }
+    
     console.log(currentLanguagesIndex, languages[currentLanguagesIndex]);
     </script>
 </html>
