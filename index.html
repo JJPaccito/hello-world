@@ -11,18 +11,26 @@
 <script type="text/javascript">
 
     var i = 0;
-    var count = 0;
+    var fiveArray = [];
+    var amount = 10;
+    var step = 15;
     
-    while (i < 100) {
-        
-        var calc = i % 5;
-        
-        if (i % 5 === 0)
+    while (fiveArray.length < 10) {
+        if (i % step === 0)
         {
-            console.log(true, i, calc);
-        }
-      
+            fiveArray[fiveArray.length] = i;
+        } 
         i++;
     }
+    console.log(fiveArray);
+    
+    fiveArray = [];
+    i = 0;
+    while (fiveArray.length < amount) {
+        fiveArray.push(i);
+        i +=step;
+    }
+    console.log(fiveArray);
+    
     </script>
 </html>
