@@ -9,28 +9,14 @@
 
 </body>
 <script type="text/javascript">
-
-    var i = 0;
-    var fiveArray = [];
-    var amount = 10;
-    var step = 15;
-    
-    while (fiveArray.length < 10) {
-        if (i % step === 0)
-        {
-            fiveArray[fiveArray.length] = i;
-        } 
-        i++;
+    var languages = ["en", "lt", "de", "ru", "ee", "lv", "pl", "es", "it", "fr"]
+    var currentLanguagesIndex = getLanguage();
+    function getLanguage();
+    {
+        var date = new Date();
+        console.log(date);
+        return 3;
     }
-    console.log(fiveArray);
-    
-    fiveArray = [];
-    i = 0;
-    while (fiveArray.length < amount) {
-        fiveArray.push(i);
-        i +=step;
-    }
-    console.log(fiveArray);
-    
+    console.log(currentLanguagesIndex, languages[currentLanguagesIndex]);
     </script>
 </html>
