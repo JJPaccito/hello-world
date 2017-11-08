@@ -6,35 +6,35 @@
     <link rel="stylesheet" href="css/app.css">        
 </head>
 <body>
-
-</body>
-<!--Laikas-->
-
+<!--Laiko patikrinimo kodas-->
     <h2>My First JavaScript</h2>
-
     <button type="button"
             onclick="document.getElementById('demo').innerHTML = Date()">
             Click me to display Date and Time.</button>
-
     <p id="demo"></p>
 <!--Laiko kodo pabaiga-->
     
+    <div onclick="greetUser()">Hello</div>
+    
+</body>
+
+<!--Skriptas -->
 <script type="text/javascript">
     var languages = ["en", "lt", "de", "ru", "ee", "lv", "pl", "es", "fr", "it"];
 
 
 //TODO fill missing languages
 	var translations = {
-		"lt": "Labas pasauli",
-		"en": "Hello world",
-		"de": "Hallo Welt",
-		"ru": "Привет мир",
-        "ee": "Tere maailm",
-        "lv": "Sveiki pasaule",
-        "pl": "Witaj, świecie!",
-        "es": "¡Hola mundo!",
-        "fr": "Bonjour le monde!",
-        "it": "Ciao mondo!"
+		lt: "Labas pasauli",
+		en: "Hello world",
+		de: "Hallo Welt",
+		ru: "Привет мир",
+        ee: "Tere maailm",
+        lv: "Sveiki pasaule",
+        pl: "Witaj, świecie!",
+        es: "¡Hola mundo!",
+        fr: "Bonjour le monde!",
+        it: "Ciao mondo!"
 	};
 
 	var currentLanguageIndex = getLanguage();
@@ -50,7 +50,7 @@
 
 	function greetUser ()
 	{
-        console.log(translations[getLanguage()]);   //
+        console.log(translations[getLanguage()]);
 	}
 
 	greetUser();
