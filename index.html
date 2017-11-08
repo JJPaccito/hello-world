@@ -9,34 +9,39 @@
 
 </body>
 <script type="text/javascript">
-    var languages = ["en", "lt", "de", "ru", "ee", "lv", "pl", "es", "it", "fr"]
-    var currentLanguagesIndex = getLanguage();
-    function getLanguage()
-    {
-        var date = new Date();
-            date = date.getSeconds() % 10;
-            date = languages[date];
-        return date;
-    }
-    function greetUser () {
-        if (currentLanguagesIndex === "en")
-        {
-        console.log("Hello world!");       
-        }
-        else if (currentLanguagesIndex === "lt")
-        {
-            console.log("Labas pasauli!")
-        }
-        else if (currentLanguagesIndex === "de")
-        {
-            console.log("Hallo welt!")
-        }
-        else 
-        {
-            console.log(".....")
-        }
-    }
-    
-    console.log(currentLanguagesIndex, languages[currentLanguagesIndex]);
+    var languages = ["en", "lt", "de", "ru", "ee", "lv", "pl", "es", "fr", "it"];
+
+//TODO fill missing languages
+	var translations = {
+		"lt": "Labas pasauli",
+		"en": "Hello world",
+		"de": "Hallo Welt",
+		"ru": "Привет мир",
+        "ee": "Tere maailm",
+        "lv": "Sveiki pasaule",
+        "pl": "Witaj, świecie!",
+        "es": "¡Hola mundo!"
+        "fr": "Bonjour le monde!"
+        "it": "Ciao mondo!"
+	};
+
+	var currentLanguageIndex = getLanguage();
+
+	function getLanguage()
+	{
+		var date = new Date();
+			date = date.getSeconds() % 10;
+		 	date = languages[date];
+
+	 	return date;
+	}
+
+	function greetUser ()
+	{
+		  //TODO greet user in his language
+	}
+
+	greetUser();
+    console.log(getLanguage)
     </script>
 </html>
