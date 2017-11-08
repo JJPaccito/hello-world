@@ -8,6 +8,13 @@
 <body>
 
 </body>
+    <h2>My First JavaScript</h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
 <script type="text/javascript">
     var languages = ["en", "lt", "de", "ru", "ee", "lv", "pl", "es", "fr", "it"];
 
@@ -20,8 +27,8 @@
         "ee": "Tere maailm",
         "lv": "Sveiki pasaule",
         "pl": "Witaj, świecie!",
-        "es": "¡Hola mundo!"
-        "fr": "Bonjour le monde!"
+        "es": "¡Hola mundo!",
+        "fr": "Bonjour le monde!",
         "it": "Ciao mondo!"
 	};
 
@@ -38,10 +45,9 @@
 
 	function greetUser ()
 	{
-		  //TODO greet user in his language
+        console.log(translations[getLanguage()]);   //
 	}
 
 	greetUser();
-    console.log(getLanguage)
     </script>
 </html>
